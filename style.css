@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------Container-------- */
+.container {
+  background-color: #fff;
+  display: flex;
+  height: 25rem;
+  width: 35rem;
+  border-radius: 10px;
+}
+
+/* --------Right Container--------- */
+.right-container {
+  padding: 2rem;
+}
+.right-container p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.right-container h1,
+.simple {
+  font-family: "Fraunces", serif;
+}
+
+.right-container .head {
+  margin: 1rem 2rem 1rem 0;
+  line-height: 1;
+}
+/* --------Image Section--------- */
+.desk-img {
+  height: 25rem;
+  border-radius: 10px 0 0 10px;
+}
+.mob-img {
+  display: none;
+}
+
+/* -------Pricing Section-------- */
+.price {
+  display: flex;
+  margin: 1.3rem 0;
+}
+.simple {
+  color: hsl(158, 36%, 37%);
+  margin-right: 1rem;
+}
+.lined {
+  text-decoration: line-through;
+  padding: 0.5rem 0;
+}
+
+/* ----------Button Section----------- */
+.btn {
+  margin-bottom: 4rem;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  background: hsl(158, 36%, 37%);
+  padding: 0.8rem 3.2rem;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background: hsl(212, 21%, 14%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.icon {
+  margin-right: 00.5rem;
+}
+
+/* ------------Media Queries------------- */
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-size: 12px;
+  }
+  /* --------Image Section--------- */
+  .desk-img {
+    display: none;
+  }
+  .mob-img {
+    display: flex;
+    width: 15rem;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* -----------Container---------- */
+  .container {
+    flex-direction: column;
+    width: 15rem;
+    height: 31rem;
+    border-radius: 10px;
+  }
+  .right-container {
+    padding: 1rem;
+  }
+  .right-container .head {
+    margin: 1.3rem 0;
+  }
+  /* ----------Button Section--------- */
+  .btn-container {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    width: 13rem;
+  }
+}
